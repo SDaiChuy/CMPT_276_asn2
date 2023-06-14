@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "newStudent.css">
+    <title>New Student</title>
+</head>
+<body>
+    <h1>New Student</h1>
+    <div class = info-box>
+        <form action="students/newStudent" method = "post">
+            <label>Name:</label><br>
+            <input type="text" name = "name" placeholder="Name"><br>
+            <label>Password:</label><br>
+            <input type="password" name = "password" placeholder="Password"><br>
+            <label>GPA:</label><br>
+            <input type="number" name = "gpa" step = "0.01" placeholder="4.0"><br>
+            <label>Year:</label><br>
+            <input type="number" name = "year" placeholder="3"><br>
+            <label>Rating:</label><br>
+            <input type="number" name = "rating" placeholder="10"><br>
+            <label>Color:</label><br>
+            <input type="text" name = "color" placeholder="Red"><br>
+            <button class = newStudent-button type = "submit" value = "SEND">Add new Student</button>
+        </form>
+    </div>
+</body>
+</html>

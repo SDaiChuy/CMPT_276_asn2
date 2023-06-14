@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <style>
+        body{
+            background: #ADD8E6;
+            justify-content: center;
+            font-family: "Gill Sans", sans-serif;
+        }
+
+        h1{
+            font-size: xx-large;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .students{
+            border-color: black;
+            padding: 20px;
+            border-style: solid;
+        }
+
+        span{
+            padding: 20px
+        }
+
+        label{
+            color:red;
+        }
+
+        button{
+            border-radius:18px;
+            width: 80px;
+            height: 40px;
+            margin: 10px;
+            text-align: center;
+        }
+        .editButton{
+            text-align: center;
+        }
+
+        .addButton{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>All Students</h1>
+    <div class = "editButton">
+        <form action="/students/login">
+            <button>Edit</button>
+        </form>
+    </div>
+    <div class = "addButton">
+        <form action="/students/addNew">
+            <button>Add</button>
+        </form>
+    </div>
+    <span th:each="students:${students}">
+        <div class ="students" th:styleappend="'height:' + ${students.gpa} + 'rem; width:' + ${students.rating} + 'rem;'">
+            <label th:text="${students.name}" th:style="'color:'+${students.color}"></label>
+        </div>
+    </span>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    body{
+        background: #ADD8E6;
+        justify-content: center;
+        font-family: "Gill Sans", sans-serif;
+    }
+    h1{
+        text-align: center;
+    }
+    .info-box{
+        justify-content: space-evenly;
+        border-radius: 20px;
+        background-color:#86c5da;
+        max-width: 15%;
+        max-height: 50%;
+        margin: auto;
+        padding: 50px;
+    }
+
+    label{
+        margin:auto;
+        font-weight: 600;
+    }
+
+    input{
+        height: 20px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    button{
+    border-radius:18px;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Information</h1>
+    <div class = info-box>
+        <form action="/students/edit" method="post">
+            <label>Name:</label><br>
+            <input type="text" name = "name" placeholder="Name"><br>
+            <label>Password:</label><br>
+            <input type="password" name = "password" placeholder="Password"><br>
+            <label>GPA:</label><br>
+            <input type="number" name = "gpa" step = "0.01" placeholder="4.0"><br>
+            <label>Year:</label><br>
+            <input type="number" name = "year" placeholder="3"><br>
+            <label>Rating:</label><br>
+            <input type="number" name = "rating" placeholder="10"><br>
+            <label>Color:</label><br>
+            <input type="text" name = "color" placeholder="Red"><br>
+            <button value = "SEND">Edit</button>
+        </form>
+        <form action="/students/delete">
+            <button>Delete User</button>
+        </form>
+    </div>
+</body>
+</html>

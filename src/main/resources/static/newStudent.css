@@ -1,0 +1,39 @@
+main{
+    display: flex;
+}
+
+body{
+    background: #ADD8E6;
+    justify-content: center;
+    font-family: "Gill Sans", sans-serif;
+}
+h1{
+    text-align: center;
+}
+.info-box{
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color:#86c5da;
+    max-width: 15%;
+    max-height: 50%;
+    margin: auto;
+    padding: 50px;
+}
+
+label{
+    margin:auto;
+    font-weight: 600;
+}
+
+input{
+    height: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.newStudent-button{
+    border-radius:18px;
+    width:150px;
+    height: 30px;
+    margin: 10px;
+}

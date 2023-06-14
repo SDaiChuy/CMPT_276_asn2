@@ -1,0 +1,61 @@
+main{
+    display: flex;
+}
+
+body{
+    background: #ADD8E6;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    padding-left: 37px;
+}
+
+.search-bar{
+    width:100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.search-button{
+    border-radius:18px;
+    width:200px;
+    height: 50;
+    margin-top: 15px;
+}
+.courseSearch{
+    height:20px;
+    width: 250px;
+    border-radius: 18px;
+    padding: 20px;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
+}
+
+.newUser{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.addStudent{
+    border-radius:18px;
+    width:200px;
+}
+
+.showStudent{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.showAll{
+    border-radius:18px;
+    width:200px;
+}
